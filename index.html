@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--This head tag stores information about the website-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--The title tag changes the tab at the top of the browser-->
+    <title>Homepage</title>
+</head>
+
+<!--The center tag is old, don't use it. But is a way to centre the content without using CSS.-->
+<center>
+<!--The body tag contains all of the content for the website-->
+
+<body>
+    <!--The header tag is a semantic element, it adds no content but is good for structure and accessibility, headers are usually the same across each webpage on the same website.-->
+    <!--An id will allow you to identify an individual tag if it has the same name as another tag e.g. you could have many sections but all for different purposes.-->
+    <header id="home">
+        <!--Nav tag holds all the links for the website-->
+        <nav>
+            <ul>
+                <!--a tag is called an anchor tag, it is used for links-->
+                <a href="#home">
+                    <li>Home</li>
+                </a>
+                <a href="#about">
+                    <li>About</li>
+                </a>
+                <a href="#education">
+                    <li>Education</li>
+                </a>
+                <a href="#hobbies">
+                    <li>Hobbies</li>
+                </a>
+                <a href="#contact">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <!--the main tag stores all of your content on your website, different for each page.-->
+    <main>
+        <!--The section tag splits up the webpage into differnt areas.-->
+        <section id="about">
+            <h2>About</h2>
+            <!--This is a big heading, headings range from 1-6. 1 is big, 6 is small-->
+            <h1>Dave Matravers</h1>
+            <h3>I am a college lecturer</h3>
+            <h6>I teach web development, but I'm not very good.</h6>
+
+            <!--This is a paragraph-->
+            <p>I teach at BTC, I have worked here for 10 years, I've met a new class today, they need to learn how to
+                unzip
+                a
+                file.</p>
+        </section>
+        <!--This is an image tag, the src is the source of where the image is stored-->
+        <img width="350px" src="Images/UCS_Logo.jpg">
+        <hr>
+        <section id="education">
+            <h2>Education</h2>
+            <!--The table tag adds a table-->
+            <table>
+                <!--The tr tag stands for table row-->
+                <tr>
+                    <!--The th tag stands for table header, this makes the word bold-->
+                    <th>Subject</th>
+                    <th>Grade</th>
+                    <th>Date Achieved</th>
+                </tr>
+
+                <tr>
+                    <!--td stands for table data, each table data tag added adds a new column-->
+                    <td>English</td>
+                    <td>B</td>
+                    <td>July 2007</td>
+                </tr>
+
+                <tr>
+                    <!--td stands for table data, each table data tag added adds a new column-->
+                    <td>maths</td>
+                    <td>B</td>
+                    <td>July 2007</td>
+                </tr>
+
+                <tr>
+                    <!--td stands for table data, each table data tag added adds a new column-->
+                    <td>Geography</td>
+                    <td>C</td>
+                    <td>July 2007</td>
+                </tr>
+
+                <tr>
+                    <!--td stands for table data, each table data tag added adds a new column-->
+                    <td>Science</td>
+                    <td>C</td>
+                    <td>July 2007</td>
+                </tr>
+
+                <tr>
+                    <!--td stands for table data, each table data tag added adds a new column-->
+                    <td>French</td>
+                    <td>C</td>
+                    <td>July 2007</td>
+                </tr>
+
+            </table>
+        </section>
+        <hr>
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <!--ul stands for unordered list, it will bullet point each item-->
+            <ul>
+                <!--li stands for list item, it adds another item to the list-->
+                <li>Cycling</li>
+                <li>TV</li>
+                <li>Web Development</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="teachers">
+            <h2>Teachers</h2>
+            <!--ol stands for ordered list, it will put the items in a numerical order-->
+            <ol>
+                <li>Dave</li>
+                <li>Simon</li>
+                <li>Ben</li>
+            </ol>
+        </section>
+        <!--hr tag is the horizontal rule, that will put a line across the page.-->
+        <hr>
+        <section id="contact">
+            <h1>Contact</h1>
+            <!--the form tag will create forms, allowing user feedback-->
+            <form>
+                <!--labels link to each input with the same value-->
+                <label>Name</label><br>
+                <!--the different input types will do different things e.g. text, email, checkboxes-->
+                <input type="text" placeholder="please enter your name..."><br>
+                <label>Email</label><br>
+                <input type="email" placeholder="please enter your email..."><br>
+                <label>Reason for message</label><br>
+                <!--the for attribute in the label links to the id in the input. The name attribute needs to be the same for all inputs.-->
+                <label for="Complaint">Complaint</label>
+                <input type="radio" id="Complaint" name="reasoning" value="Complaint"><br>
+                <label for="Compliment">Compliment</label>
+                <input type="radio" id="Compliment" name="reasoning" value="Compliment"><br>
+                <label for="All">All of the above</label>
+                <input type="radio" id="All" name="reasoning" value="All"><br>
+                <!--the text area tag will create a larger text box-->
+                <textarea cols="24" rows="12"></textarea><br>
+                <!--the submit input type will complete the action from the form. In this instance it will do nothing as there is no action.-->
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <!--Footer will be the same on most websites, at the bottom of the page. Usually containing links, info etc.-->
+    <footer>
+        <p>&#169 - Dave Matravers 2023</p>
+    </footer>
+</body>
+</center>
+
+</html>
